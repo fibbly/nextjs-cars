@@ -9,7 +9,7 @@ const CarItem: FunctionComponent<Props> = (props) => {
 	return (
 		<Link href={"/cars/" + props.id}>
 			<div className={styles["car-item"]}>
-				<img src={props.image} />
+				<img src={`../models/${props.id}/image.png`} />
 				<div className={styles.title}>
 					{props.make} {props.model}
 				</div>
