@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+
+.flex-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.flex-container > section {
+	height: 50vh;
+}
+
+.car-details {
+	padding: 5%;
+	overflow: scroll;
+}
+
+.car-details > h1 {
+	font-size: 3rem;
+}
+
+@media (min-width: 1125px) {
+	.flex-container {
+		flex-direction: row;
+	}
+
+	.flex-container > section {
+		height: auto;
+	}
+
+	.car-details {
+		min-width: 33%;
+		flex: 1;
+	}
+
+	.car-view {
+		max-width: 66%;
+		flex: 2;
+	}
+}
