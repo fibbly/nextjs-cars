@@ -42,7 +42,7 @@ const CarDetails: NextPage<Props> = (props: Props) => {
 						</Suspense>
 					</Canvas>
 				</section>
-				<audio src={"../music.mp3"} autoPlay></audio>
+				<audio src={`../music/${props.car.id}.mp3`} autoPlay></audio>
 			</main>
 		</Fragment>
 	);
@@ -92,7 +92,6 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
 		props: {
 			car: {
 				id: car._id.toString(),
-				image: car.image,
 				make: car.make,
 				model: car.model,
 				engine: car.engine,

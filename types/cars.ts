@@ -1,7 +1,7 @@
 import type { WithId, Document, ObjectId } from "mongodb";
 
 export interface CarModel extends WithId<Document> {
-	image: string;
+	image?: string;
 	make: string;
 	model: string;
 	engine: string;
@@ -10,7 +10,7 @@ export interface CarModel extends WithId<Document> {
 
 export interface Car {
 	id: string;
-	image: string;
+	image?: string;
 	make: string;
 	model: string;
 	engine: string;

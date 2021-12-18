@@ -31,7 +31,6 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
 					id: car._id.toString(),
 					make: car.make,
 					model: car.model,
-					image: car.image,
 					description: car.description,
 					engine: car.engine,
 				})

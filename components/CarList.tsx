@@ -14,7 +14,6 @@ const CarList: FunctionComponent<Props> = (props) => {
 				<CarItem
 					key={car.id}
 					id={car.id}
-					image={car.image}
 					make={car.make}
 					model={car.model}
 					engine={car.engine}
